@@ -16,6 +16,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Setup", "Setup", "{3A1C40E4
 		EnhancedNotes\EnhancedNotesSetup\Setup.iss = EnhancedNotes\EnhancedNotesSetup\Setup.iss
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core", "Microsoft.WindowsAPICodePack\Core\Core.csproj", "{2E1FB0DF-F9BB-4909-9F32-2D9D022A8E57}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shell", "Microsoft.WindowsAPICodePack\Shell\Shell.csproj", "{AA0C00CB-8699-4F37-BFAE-40CA87ACC06D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
@@ -27,6 +31,10 @@ Global
 		{3F3CBE6F-7CDE-4A89-9685-09B65394D171}.Debug|x86.Build.0 = Debug|x86
 		{A7240B8A-F853-411A-AAD0-FCC8F09F7F13}.Debug|x86.ActiveCfg = Debug|x86
 		{A7240B8A-F853-411A-AAD0-FCC8F09F7F13}.Debug|x86.Build.0 = Debug|x86
+		{2E1FB0DF-F9BB-4909-9F32-2D9D022A8E57}.Debug|x86.ActiveCfg = Debug|x86
+		{2E1FB0DF-F9BB-4909-9F32-2D9D022A8E57}.Debug|x86.Build.0 = Debug|x86
+		{AA0C00CB-8699-4F37-BFAE-40CA87ACC06D}.Debug|x86.ActiveCfg = Debug|x86
+		{AA0C00CB-8699-4F37-BFAE-40CA87ACC06D}.Debug|x86.Build.0 = Debug|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -34,5 +42,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{461DACCA-8EBF-4C03-AD1A-C438E4EB3B36} = {65365D4A-9D0F-48F6-8442-7E92F3F157DA}
 		{3F3CBE6F-7CDE-4A89-9685-09B65394D171} = {65365D4A-9D0F-48F6-8442-7E92F3F157DA}
+		{2E1FB0DF-F9BB-4909-9F32-2D9D022A8E57} = {65365D4A-9D0F-48F6-8442-7E92F3F157DA}
+		{AA0C00CB-8699-4F37-BFAE-40CA87ACC06D} = {65365D4A-9D0F-48F6-8442-7E92F3F157DA}
 	EndGlobalSection
 EndGlobal
