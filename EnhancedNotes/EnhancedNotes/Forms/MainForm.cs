@@ -366,7 +366,7 @@ namespace DoenaSoft.DVDProfiler.EnhancedNotes
         private void OnCheckForUpdatesToolStripMenuItemClick(Object sender, EventArgs e)
         {
             OnlineAccess.Init("Doena Soft.", "EnhancedNotes");
-            OnlineAccess.CheckForNewVersion("http://doena-soft.de/dvdprofiler/3.9.0/versions.xml", this, "EnhancedNotes", this.GetType().Assembly);
+            OnlineAccess.CheckForNewVersion("http://doena-soft.de/dvdprofiler/3.9.5/versions.xml", this, "EnhancedNotes", this.GetType().Assembly);
         }
 
         private void OnAboutToolStripMenuItemClick(Object sender, EventArgs e)
