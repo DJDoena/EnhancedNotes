@@ -111,17 +111,17 @@ namespace DoenaSoft.DVDProfiler.EnhancedNotes
 
             #region Invelos Data
 
-            this.StandardNotesTabPage.Text = Texts.StandardNote;
+            StandardNotesTabPage.Text = Texts.StandardNote;
 
             #endregion
 
             #region Plugin Data
 
-            this.Note1TabPage.Text = dv.Note1Label;
-            this.Note2TabPage.Text = dv.Note2Label;
-            this.Note3TabPage.Text = dv.Note3Label;
-            this.Note4TabPage.Text = dv.Note4Label;
-            this.Note5TabPage.Text = dv.Note5Label;
+            Note1TabPage.Text = dv.Note1Label;
+            Note2TabPage.Text = dv.Note2Label;
+            Note3TabPage.Text = dv.Note3Label;
+            Note4TabPage.Text = dv.Note4Label;
+            Note5TabPage.Text = dv.Note5Label;
 
             #endregion
 
@@ -366,7 +366,7 @@ namespace DoenaSoft.DVDProfiler.EnhancedNotes
         private void OnCheckForUpdatesToolStripMenuItemClick(Object sender, EventArgs e)
         {
             OnlineAccess.Init("Doena Soft.", "EnhancedNotes");
-            OnlineAccess.CheckForNewVersion("http://doena-soft.de/dvdprofiler/3.9.5/versions.xml", this, "EnhancedNotes", this.GetType().Assembly);
+            OnlineAccess.CheckForNewVersion("http://doena-soft.de/dvdprofiler/4.0.0/versions.xml", this, "EnhancedNotes", GetType().Assembly);
         }
 
         private void OnAboutToolStripMenuItemClick(Object sender, EventArgs e)
