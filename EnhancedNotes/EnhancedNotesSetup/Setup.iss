@@ -1,8 +1,8 @@
 [Setup]
 AppName=Enhanced Notes
 AppId=EnhancedNotes
-AppVerName=Enhanced Notes 1.1.5.2
-AppCopyright=Copyright © Doena Soft. 2015 - 2017
+AppVerName=Enhanced Notes 1.1.4.6
+AppCopyright=Copyright © Doena Soft. 2015 - 2019
 AppPublisher=Doena Soft.
 AppPublisherURL=http://doena-journal.net/en/dvd-profiler-tools/
 DefaultDirName={pf32}\Doena Soft.\Enhanced Notes
@@ -13,16 +13,16 @@ Compression=zip/9
 AppMutex=InvelosDVDPro
 OutputBaseFilename=EnhancedNotesSetup
 OutputDir=..\..\..\..\EnhancedNotesSetup\Setup\EnhancedNotes
-MinVersion=0,5.1
+MinVersion=0,6.0
 PrivilegesRequired=admin
 WizardImageFile=compiler:wizmodernimage-is.bmp
 WizardSmallImageFile=compiler:wizmodernsmallimage-is.bmp
 DisableReadyPage=yes
 ShowLanguageDialog=no
 VersionInfoCompany=Doena Soft.
-VersionInfoCopyright=2015 - 2017
+VersionInfoCopyright=2015 - 2019
 VersionInfoDescription=Enhanced Notes Setup
-VersionInfoVersion=1.1.5.2
+VersionInfoVersion=1.1.4.6
 UninstallDisplayIcon={app}\djdsoft.ico
 
 [Languages]
