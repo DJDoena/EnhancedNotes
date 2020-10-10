@@ -104,7 +104,7 @@ namespace DoenaSoft.DVDProfiler.EnhancedNotes
                         , MessageBoxTexts.ErrorHeader, MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
-                        
+
             EnsureSettingsAndSetUILanguage();
 
             SetIsRemoteAccess();
@@ -905,7 +905,7 @@ namespace DoenaSoft.DVDProfiler.EnhancedNotes
                 String lastApiError;
 
                 lastApiError = Api.GetLastError();
-                newEx = new EnhancedCOMException(comEx, lastApiError);
+                newEx = new EnhancedCOMException(lastApiError, comEx);
 
                 returnEx = newEx;
             }
