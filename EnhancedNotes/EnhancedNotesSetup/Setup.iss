@@ -2,7 +2,7 @@
 AppName=Enhanced Notes
 AppId=EnhancedNotes
 AppVerName=Enhanced Notes 1.1.4.8
-AppCopyright=Copyright © Doena Soft. 2015 - 2021
+AppCopyright=Copyright © Doena Soft. 2015 - 2022
 AppPublisher=Doena Soft.
 AppPublisherURL=http://doena-journal.net/en/dvd-profiler-tools/
 DefaultDirName={commonpf32}\Doena Soft.\Enhanced Notes
@@ -13,14 +13,14 @@ Compression=zip/9
 AppMutex=InvelosDVDPro
 OutputBaseFilename=EnhancedNotesSetup
 OutputDir=..\..\..\..\EnhancedNotesSetup\Setup\EnhancedNotes
-MinVersion=0,6.0
+MinVersion=0,6.1sp1
 PrivilegesRequired=admin
-WizardImageFile=compiler:wizmodernimage-is.bmp
-WizardSmallImageFile=compiler:wizmodernsmallimage-is.bmp
+WizardStyle=modern
+
 DisableReadyPage=yes
 ShowLanguageDialog=no
 VersionInfoCompany=Doena Soft.
-VersionInfoCopyright=2015 - 2021
+VersionInfoCopyright=2015 - 2022
 VersionInfoDescription=Enhanced Notes Setup
 VersionInfoVersion=1.1.4.8
 UninstallDisplayIcon={app}\djdsoft.ico
@@ -37,32 +37,28 @@ Name: "full"; Description: "Full installation"
 [Files]
 Source: "djdsoft.ico"; DestDir: "{app}"; Flags: ignoreversion
 
-Source: "EnhancedNotes.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "EnhancedNotes.pdb"; DestDir: "{app}"; Flags: ignoreversion
+Source: "DoenaSoft.EnhancedNotes.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "DoenaSoft.EnhancedNotes.pdb"; DestDir: "{app}"; Flags: ignoreversion
 
-Source: "EnhancedNotes.xsd"; DestDir: "{app}"; Flags: ignoreversion
+Source: "DoenaSoft.DVDProfilerHelper.dll"; DestDir: "{app}"; Flags: ignoreversion
 
-Source: "DVDProfilerHelper.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "DVDProfilerHelper.pdb"; DestDir: "{app}"; Flags: ignoreversion
+Source: "DoenaSoft.EnhancedNotes.Interface.dll"; DestDir: "{app}"; Flags: ignoreversion
 
-Source: "EnhancedNotesLibrary.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "EnhancedNotesLibrary.pdb"; DestDir: "{app}"; Flags: ignoreversion
+Source: "DoenaSoft.WindowsAPICodePack.Core.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "DoenaSoft.WindowsAPICodePack.Shell.dll"; DestDir: "{app}"; Flags: ignoreversion
 
-Source: "Microsoft.WindowsAPICodePack.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "Microsoft.WindowsAPICodePack.Shell.dll"; DestDir: "{app}"; Flags: ignoreversion
-
-Source: "de\EnhancedNotes.resources.dll"; DestDir: "{app}\de"; Flags: ignoreversion
-Source: "de\DVDProfilerHelper.resources.dll"; DestDir: "{app}\de"; Flags: ignoreversion
+Source: "de\DoenaSoft.EnhancedNotes.resources.dll"; DestDir: "{app}\de"; Flags: ignoreversion
+Source: "de\DoenaSoft.DVDProfilerHelper.resources.dll"; DestDir: "{app}\de"; Flags: ignoreversion
 
 ; NOTE: Don't use "Flags: ignoreversion" on any shared system files
 
 [Run]
-Filename: "{win}\Microsoft.NET\Framework\v4.0.30319\RegAsm.exe"; Parameters: "/codebase ""{app}\EnhancedNotes.dll"""; Flags: runhidden
+Filename: "{win}\Microsoft.NET\Framework\v4.0.30319\RegAsm.exe"; Parameters: "/codebase ""{app}\DoenaSoft.EnhancedNotes.dll"""; Flags: runhidden
 
 ;[UninstallDelete]
 
 [UninstallRun]
-Filename: "{win}\Microsoft.NET\Framework\v4.0.30319\RegAsm.exe"; Parameters: "/u ""{app}\EnhancedNotes.dll"""; Flags: runhidden
+Filename: "{win}\Microsoft.NET\Framework\v4.0.30319\RegAsm.exe"; Parameters: "/u ""{app}\DoenaSoft.EnhancedNotes.dll"""; Flags: runhidden
 
 [Registry]
 ; Register - Cleanup ahead of time in case the user didn't uninstall the previous version.

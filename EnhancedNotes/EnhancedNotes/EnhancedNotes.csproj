@@ -10,7 +10,7 @@
     <ApplicationIcon>DJDSOFT.ICO</ApplicationIcon>
     <AssemblyKeyContainerName>
     </AssemblyKeyContainerName>
-    <AssemblyName>EnhancedNotes</AssemblyName>
+    <AssemblyName>DoenaSoft.EnhancedNotes</AssemblyName>
     <AssemblyOriginatorKeyFile>EnhancedNotes.snk</AssemblyOriginatorKeyFile>
     <DefaultClientScript>JScript</DefaultClientScript>
     <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
@@ -29,6 +29,8 @@
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <TargetFrameworkProfile>
     </TargetFrameworkProfile>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
     <DebugSymbols>true</DebugSymbols>
@@ -141,27 +143,20 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\DVDProfilerHelper\DVDProfilerHelper\DVDProfilerHelper.csproj">
-      <Project>{461dacca-8ebf-4c03-ad1a-c438e4eb3b36}</Project>
-      <Name>DVDProfilerHelper</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\EnhancedNotesLibrary\EnhancedNotesLibrary\EnhancedNotesLibrary.csproj">
-      <Project>{3f3cbe6f-7cde-4a89-9685-09b65394d171}</Project>
-      <Name>EnhancedNotesLibrary</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\Microsoft.WindowsAPICodePack\Core\Core.csproj">
-      <Project>{2e1fb0df-f9bb-4909-9f32-2d9d022a8e57}</Project>
-      <Name>Core</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\Microsoft.WindowsAPICodePack\Shell\Shell.csproj">
-      <Project>{aa0c00cb-8699-4f37-bfae-40ca87acc06d}</Project>
-      <Name>Shell</Name>
-    </ProjectReference>
+    <PackageReference Include="DoenaSoft.DVDProfilerHelper">
+      <Version>2.2.9</Version>
+    </PackageReference>
+    <PackageReference Include="DoenaSoft.EnhancedNotes.Interface">
+      <Version>1.1.2</Version>
+    </PackageReference>
+    <PackageReference Include="DoenaSoft.WindowsAPICodePack">
+      <Version>1.1.1</Version>
+    </PackageReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
     <PreBuildEvent>
     </PreBuildEvent>
-    <PostBuildEvent>"%25ProgramFiles%25\Inno Setup 6\iscc.exe"  ..\..\..\..\EnhancedNotesSetup\Setup.iss</PostBuildEvent>
+    <PostBuildEvent>"%25ProgramFiles(x86)%25\Inno Setup 6\iscc.exe"  ..\..\..\..\EnhancedNotesSetup\Setup.iss</PostBuildEvent>
   </PropertyGroup>
 </Project>
