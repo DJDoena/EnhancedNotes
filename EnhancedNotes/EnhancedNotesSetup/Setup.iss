@@ -1,18 +1,18 @@
 [Setup]
 AppName=Enhanced Notes
 AppId=EnhancedNotes
-AppVerName=Enhanced Notes 1.1.4.8
-AppCopyright=Copyright © Doena Soft. 2015 - 2022
+AppVerName=Enhanced Notes 1.1.5.0
+AppCopyright=Copyright © Doena Soft. 2015 - 2023
 AppPublisher=Doena Soft.
 AppPublisherURL=http://doena-journal.net/en/dvd-profiler-tools/
 DefaultDirName={commonpf32}\Doena Soft.\Enhanced Notes
 ; DefaultGroupName=Doena Soft.
 DirExistsWarning=No
-SourceDir=..\EnhancedNotes\bin\x86\EnhancedNotes
+SourceDir=..\EnhancedNotes\bin\x86\Debug\net481
 Compression=zip/9
 AppMutex=InvelosDVDPro
 OutputBaseFilename=EnhancedNotesSetup
-OutputDir=..\..\..\..\EnhancedNotesSetup\Setup\EnhancedNotes
+OutputDir=..\EnhancedFeatures\EnhancedFeaturesSetup\Setup\EnhancedNotes
 MinVersion=0,6.1sp1
 PrivilegesRequired=admin
 WizardStyle=modern
@@ -22,7 +22,7 @@ ShowLanguageDialog=no
 VersionInfoCompany=Doena Soft.
 VersionInfoCopyright=2015 - 2022
 VersionInfoDescription=Enhanced Notes Setup
-VersionInfoVersion=1.1.4.8
+VersionInfoVersion=1.1.5.0
 UninstallDisplayIcon={app}\djdsoft.ico
 
 [Languages]
@@ -40,15 +40,23 @@ Source: "djdsoft.ico"; DestDir: "{app}"; Flags: ignoreversion
 Source: "DoenaSoft.EnhancedNotes.dll"; DestDir: "{app}"; Flags: ignoreversion
 Source: "DoenaSoft.EnhancedNotes.pdb"; DestDir: "{app}"; Flags: ignoreversion
 
-Source: "DoenaSoft.DVDProfilerHelper.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "DoenaSoft.AbstractionLayer.Web.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "DoenaSoft.DVDProfiler.Helper.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "DoenaSoft.ToolBox.dll"; DestDir: "{app}"; Flags: ignoreversion
 
 Source: "DoenaSoft.EnhancedNotes.Interface.dll"; DestDir: "{app}"; Flags: ignoreversion
 
 Source: "DoenaSoft.WindowsAPICodePack.Core.dll"; DestDir: "{app}"; Flags: ignoreversion
 Source: "DoenaSoft.WindowsAPICodePack.Shell.dll"; DestDir: "{app}"; Flags: ignoreversion
 
+Source: "System.Buffers.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "System.Memory.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "System.Numerics.Vectors.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "System.Resources.Extensions.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "System.Runtime.CompilerServices.Unsafe.dll"; DestDir: "{app}"; Flags: ignoreversion
+
 Source: "de\DoenaSoft.EnhancedNotes.resources.dll"; DestDir: "{app}\de"; Flags: ignoreversion
-Source: "de\DoenaSoft.DVDProfilerHelper.resources.dll"; DestDir: "{app}\de"; Flags: ignoreversion
+Source: "de\DoenaSoft.DVDProfiler.Helper.resources.dll"; DestDir: "{app}\de"; Flags: ignoreversion
 
 ; NOTE: Don't use "Flags: ignoreversion" on any shared system files
 
