@@ -2,7 +2,7 @@
 AppName=Enhanced Notes
 AppId=EnhancedNotes
 AppVerName=Enhanced Notes 1.1.5.0
-AppCopyright=Copyright © Doena Soft. 2015 - 2023
+AppCopyright=Copyright © Doena Soft. 2015 - 2024
 AppPublisher=Doena Soft.
 AppPublisherURL=http://doena-journal.net/en/dvd-profiler-tools/
 DefaultDirName={commonpf32}\Doena Soft.\Enhanced Notes
@@ -20,7 +20,7 @@ WizardStyle=modern
 DisableReadyPage=yes
 ShowLanguageDialog=no
 VersionInfoCompany=Doena Soft.
-VersionInfoCopyright=2015 - 2022
+VersionInfoCopyright=2015 - 2024
 VersionInfoDescription=Enhanced Notes Setup
 VersionInfoVersion=1.1.5.0
 UninstallDisplayIcon={app}\djdsoft.ico
