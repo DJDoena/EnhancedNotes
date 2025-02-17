@@ -72,13 +72,16 @@ namespace DoenaSoft.DVDProfiler.EnhancedNotes
 
         #endregion
 
+        static Plugin()
+        {
+            DVDProfilerHelperAssemblyLoader.Load();
+        }
+
         public Plugin()
         {
             ApplicationPath = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + @"\Doena Soft\EnhancedNotes\";
             SettingsFile = ApplicationPath + "EnhancedNotes.xml";
             ErrorFile = Environment.GetEnvironmentVariable("TEMP") + @"\EnhancedNotesCrash.xml";
-
-            DVDProfilerHelperAssemblyLoader.Load();
         }
 
         #region I.. Members
