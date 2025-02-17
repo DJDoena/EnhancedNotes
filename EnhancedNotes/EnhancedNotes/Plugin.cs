@@ -77,6 +77,8 @@ namespace DoenaSoft.DVDProfiler.EnhancedNotes
             ApplicationPath = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + @"\Doena Soft\EnhancedNotes\";
             SettingsFile = ApplicationPath + "EnhancedNotes.xml";
             ErrorFile = Environment.GetEnvironmentVariable("TEMP") + @"\EnhancedNotesCrash.xml";
+
+            DVDProfilerHelperAssemblyLoader.Load();
         }
 
         #region I.. Members
@@ -788,7 +790,7 @@ namespace DoenaSoft.DVDProfiler.EnhancedNotes
                     dv = null;
                     try
                     {
-                        dv = Serializer<DefaultValues>.Deserialize(ofd.FileName);
+                        dv = XmlSerializer<DefaultValues>.Deserialize(ofd.FileName);
                     }
                     catch (Exception ex)
                     {
@@ -823,7 +825,7 @@ namespace DoenaSoft.DVDProfiler.EnhancedNotes
 
                     try
                     {
-                        Serializer<DefaultValues>.Serialize(sfd.FileName, dv);
+                        XmlSerializer<DefaultValues>.Serialize(sfd.FileName, dv);
 
                         MessageBox.Show(MessageBoxTexts.Done, MessageBoxTexts.InformationHeader, MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
@@ -881,7 +883,7 @@ namespace DoenaSoft.DVDProfiler.EnhancedNotes
 
             exceptionXml = new ExceptionXml(ex);
 
-            Serializer<ExceptionXml>.Serialize(ErrorFile, exceptionXml);
+            XmlSerializer<ExceptionXml>.Serialize(ErrorFile, exceptionXml);
         }
 
         private Exception WrapCOMException(Exception ex)

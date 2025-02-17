@@ -1,24 +1,23 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
-		<TargetFrameworks>net481</TargetFrameworks>
-		<UseWindowsForms>true</UseWindowsForms>
-		<Platforms>x86</Platforms>
-		<OutputType>Library</OutputType>
-		<RootNamespace>DoenaSoft.DVDProfiler.EnhancedNotes</RootNamespace>
 		<AssemblyName>DoenaSoft.EnhancedNotes</AssemblyName>
+		<RootNamespace>DoenaSoft.DVDProfiler.EnhancedNotes</RootNamespace>
+		<OutputType>Library</OutputType>
+		<TargetFrameworks>net481</TargetFrameworks>
+		<Platforms>x86</Platforms>
+		<ApplicationIcon>DJDSOFT.ICO</ApplicationIcon>
+		<UseWindowsForms>true</UseWindowsForms>
+		<CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
 		<SignAssembly>True</SignAssembly>
 		<AssemblyOriginatorKeyFile>EnhancedNotes.snk</AssemblyOriginatorKeyFile>
+		<EnableComHosting>true</EnableComHosting>
 		<Title>Enhanced Notes</Title>
 		<Company>Doena Soft.</Company>
 		<Authors>DJ Doena</Authors>
-		<Version>1.1.5</Version>
-		<FileVersion>1.1.5</FileVersion>
-		<EnableComHosting>true</EnableComHosting>
-		<ApplicationIcon>DJDSOFT.ICO</ApplicationIcon>
 		<Copyright>Copyright © Doena Soft. 2015 - 2024</Copyright>
-		<CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
-		<EmbeddedResourceUseDependentUponConvention>true</EmbeddedResourceUseDependentUponConvention>
+		<Version>1.1.6</Version>
+		<FileVersion>1.1.6</FileVersion>
 	</PropertyGroup>
 
 	<ItemGroup>
@@ -26,9 +25,9 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<PackageReference Include="DoenaSoft.DVDProfiler.Helper" Version="3.0.8" />
+		<PackageReference Include="DoenaSoft.DVDProfiler.Helper" Version="3.0.11" />
 		<PackageReference Include="DoenaSoft.EnhancedNotes.Interface" Version="2.0.2" />
-		<PackageReference Include="DoenaSoft.WindowsAPICodePack" Version="2.0.0" />
+		<PackageReference Include="DoenaSoft.WindowsAPICodePack" Version="3.0.0" />
 	</ItemGroup>
 
 	<ItemGroup>
